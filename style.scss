@@ -1,0 +1,122 @@
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(249, 10%, 26%) ;
+$grayish-blue: hsl(246, 25%, 77%);
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: fit-content;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $red;
+
+}
+
+
+.words {
+    float: left;
+    width: 40%
+}
+
+
+
+
+h1 {
+    color: white;
+    font-weight: 700;
+   
+    font-size: 5rem;
+   
+}
+
+
+p {
+    color: white;
+    font-weight: 400;
+    
+    font-size: 1.25rem;
+    
+    
+}
+
+
+.formBox {
+    width: 40%;
+    max-width: 525px;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 10rem;
+    max-height: 575px;
+    .banner {
+        color: white;
+        background-color: $blue;
+        width: 100%;
+        min-width: fit-content;
+        text-align: center;
+        height: 57px;
+        border-radius: 10px;
+        line-height: 3;
+        box-shadow: 0px 6px 0px hsla(249, 10%, 26%, .5) ;
+        
+        #span1 {
+            font-weight: 400;
+        }
+    }
+
+    form {
+        width: 100%;
+        float: right;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 6px 0px hsla(249, 10%, 26%, .5) ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.terms {
+    
+    color: $grayish-blue;
+    font-weight: 500;
+   
+}
+
+#span2 {
+    color: $red;
+}
+
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}

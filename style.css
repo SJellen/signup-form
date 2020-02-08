@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff7a7a;
+}
+
+.words {
+  float: left;
+  width: 40%;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.formBox {
+  width: 40%;
+  max-width: 525px;
+  float: right;
+  margin-right: 10rem;
+  margin-top: 10rem;
+  max-height: 575px;
+}
+
+.formBox .banner {
+  color: white;
+  background-color: #6055a5;
+  width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  text-align: center;
+  height: 57px;
+  border-radius: 10px;
+  line-height: 3;
+  -webkit-box-shadow: 0px 6px 0px rgba(62, 60, 73, 0.5);
+          box-shadow: 0px 6px 0px rgba(62, 60, 73, 0.5);
+}
+
+.formBox .banner #span1 {
+  font-weight: 400;
+}
+
+.formBox form {
+  width: 100%;
+  float: right;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 0px rgba(62, 60, 73, 0.5);
+          box-shadow: 0px 6px 0px rgba(62, 60, 73, 0.5);
+}
+
+.terms {
+  color: #b9b6d3;
+  font-weight: 500;
+}
+
+#span2 {
+  color: #ff7a7a;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
