@@ -26,13 +26,6 @@
     See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
   but understanding how developers think is invaluable. 
   </p>
-  
-
- 
-
-
-
-
 </div>
 
 
@@ -44,15 +37,32 @@
   </h3>
   
   
-    <form action="">
-   <input type="text" class="firstName" placeholder="First Name">
-   <p class="message"></p> 
-   <input type="text" class="lastName" placeholder="Last Name">
-   <p class="message"></p> 
-   <input type="text" class="email" placeholder="Email Address">
-   <p class="message"></p> 
-   <input type="text" class="password" placeholder="Password">
-   <p class="message"></p> 
+    <form class="form" id="form">
+
+   <div class="control" id="firstNameID">
+    <input type="text" class="firstName" id="firstName" aria-label="firstName" placeholder="First Name">
+
+    <p class="message1">First Name cannot be empty</p> 
+   </div>   
+
+   <div class="control" id="lastNameID">
+    <input type="text" class="lastName" id="lastName" aria-label="lastName" placeholder="Last Name">
+ 
+    <p class="message2">Last Name cannot be empty</p> 
+   </div>
+
+   <div class="control" id="emailID">
+    <input type="text" class="email" id="email" aria-label="email" placeholder="Email Address">
+  
+    <p class="message3">Looks like this is not an email</p> 
+   </div>
+
+  <div class="control" id="passwordID">
+    <input type="text" class="password" id="password" aria-label="password" placeholder="Password">
+
+   <p class="message4">Password cannot be empty</p> 
+  </div>
+   
   
   <button class="submit" type="submit">Claim your free trial</button>
   
@@ -78,8 +88,9 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Scott Jellen</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

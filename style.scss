@@ -3,7 +3,8 @@ $green: hsl(154, 59%, 51%);
 $blue: hsl(248, 32%, 49%);
 $dark-blue: hsl(249, 10%, 26%) ;
 $grayish-blue: hsl(246, 25%, 77%);
-
+$desktop-width: 1440px;
+$mobile-width: 375px;
 
 
 
@@ -13,55 +14,55 @@ body {
     padding: 0;
     box-sizing: border-box;
     min-width: fit-content;
+    max-width: $desktop-width;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     background-image: url(./images/bg-intro-desktop.png);
-    background-repeat: no-repeat;
     background-size: cover;
     background-color: $red;
-
 }
 
 
 .words {
+    margin-top: 15rem;
+    margin-left: 5rem;
     float: left;
-    width: 40%
+    width: 500px;
+    max-width: 100%;
+    min-width: 400px;
 }
-
-
 
 
 h1 {
     color: white;
     font-weight: 700;
-   
-    font-size: 5rem;
-   
+    font-size: 3rem;
+    line-height: 1.25;
 }
 
 
 p {
     color: white;
     font-weight: 400;
-    
-    font-size: 1.25rem;
-    
-    
+    font-size: 1rem;
+    width: 650px;
+    max-width: 100%;  
 }
 
 
 .formBox {
-    width: 40%;
-    max-width: 525px;
+    margin-right: 10%;
     float: right;
-    margin-right: 10rem;
-    margin-top: 10rem;
-    max-height: 575px;
+    margin-top: 5%;
+    width: 525px;
+    max-width: 100%;
+    margin-bottom: 5%;
     .banner {
         color: white;
         background-color: $blue;
-        width: 100%;
-        min-width: fit-content;
+        position: relative;
+        width: 525px;
+        max-width: 100%;
         text-align: center;
         height: 57px;
         border-radius: 10px;
@@ -74,44 +75,105 @@ p {
     }
 
     form {
-        width: 100%;
+        width: 525px;
+        max-width: 100%;
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         float: right;
         border-radius: 10px;
         background-color: white;
         box-shadow: 0px 6px 0px hsla(249, 10%, 26%, .5) ;
     }
-}
+    input {
+        margin: 0 auto;
+        margin-left: 2.30rem;
+        width: 450px;
+        border-radius: 10px;
+        border: 1px solid silver;
+        max-width: 100%;
+        height: 52px;
+    }
 
 
 
+    p {
+        opacity: 0;
+        color: red;
+        font-size: .75rem;
+        text-align: right;
+        margin: 1rem 4rem 1rem -4rem;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.terms {
+.error {
+    input {
+        background: url(./images/icon-error.svg) no-repeat scroll 95%;
+        border: 2px solid $red;
+    }
+  
     
+    
+    
+    p {
+        opacity: 1;
+        display: block;
+    }
+    
+    
+    
+ }
+
+ input::placeholder {
+    padding-left: 2.5rem;
+    font-size: .9rem;
+    color: $dark-blue;
+    font-weight: 500;
+}
+ 
+ 
+.terms {
+    display: flex;
+    margin: 0 auto;
+    opacity: .5;
     color: $grayish-blue;
     font-weight: 500;
-   
+    font-size: .75rem;
+    justify-content: center;
+    padding-top: 1.5rem;
 }
 
 #span2 {
     color: $red;
 }
+button {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-left: 2.30rem;
+    width: 450px;
+    max-width: 100%;
+    color: white;
+    background-color: $green;
+    height: 54px;
+    box-shadow: inset 0px -5px 0px 0px hsla(249, 10%, 26%, .25);
+    border-radius: 10px;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+button:hover {
+    background-color: hsla(154, 59%, 51%, .75);
+    box-shadow: inset 0px -5px 0px 0px hsla(249, 10%, 26%, .05);
+    cursor: pointer;
+}
+
+
+
+
+}
+
 
 
 
@@ -119,4 +181,11 @@ p {
 .attribution {
     position: absolute;
     bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+   
 }
