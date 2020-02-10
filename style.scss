@@ -29,7 +29,6 @@ body {
     float: left;
     width: 500px;
     max-width: 100%;
-    min-width: 400px;
 }
 
 
@@ -51,7 +50,7 @@ p {
 
 
 .formBox {
-    margin-right: 10%;
+    margin-right: 5rem;
     float: right;
     margin-top: 5%;
     width: 525px;
@@ -169,23 +168,125 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
 }
 
 
 
+@media only screen and (max-width: 1250px) {
+  .words {
+      margin-left: 0;
+      transform: scale(.9);
+  }
+  .formBox {
+      transform: scale(.9);
+  }
+}
 
-
-.attribution {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-    a:link {
-        text-decoration: none;
-        color: white;
+@media only screen and (max-width: 1106px) {
+    .words {
+      margin: 10rem auto;
     }
-   
+    .formBox {
+        margin: 5rem auto;
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .words {
+       
+        margin: 5rem 10rem;
+    }
+    .formBox {
+        
+       margin: 0 10rem;
+       float: left;
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+    .words {
+        margin: 5rem 5rem;
+    }
+    .formBox {
+       margin: 0 5rem;
+       
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+    .words {
+        margin: 2rem 3rem;
+        transform: scale(.7);
+    }
+    .formBox {
+       margin: -2rem 2.5rem;
+       transform: scale(.7);
+       
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .words {
+       margin-bottom: -4rem;
+       margin-left: .5rem;
+        transform: scale(.6);
+    }
+    .formBox {
+        margin-left: .5rem;
+       transform: scale(.6);
+       
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+  body {
+      max-width: $mobile-width;
+      margin: 0 auto;
+  }
+
+  .words {
+    margin: 0 auto;
+    max-width: 375px;
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        max-width: 360px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: -12rem;
+    }
+  }
+
+  .formBox {
+      margin: 0 auto;
+      max-width: 375px;
+      .form {
+          max-width: 375px;
+      }
+      button {
+          max-width: 300px;
+      }
+      input {
+          max-width: 300px;
+      }
+      .terms {
+          max-width: 300px;
+          font-size: xx-small;
+         
+      }
+      .banner {
+          max-width: 250px;
+          height: auto;
+          padding-left: 4rem;
+          padding-right: 4rem;
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+          line-height: 1.5;
+      }
+  }
+
 }

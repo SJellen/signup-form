@@ -20,7 +20,6 @@ body {
   float: left;
   width: 500px;
   max-width: 100%;
-  min-width: 400px;
 }
 
 h1 {
@@ -39,7 +38,7 @@ p {
 }
 
 .formBox {
-  margin-right: 10%;
+  margin-right: 5rem;
   float: right;
   margin-top: 5%;
   width: 525px;
@@ -177,15 +176,116 @@ p {
   cursor: pointer;
 }
 
-.attribution {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0 auto;
+@media only screen and (max-width: 1250px) {
+  .words {
+    margin-left: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .formBox {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
-.attribution a:link {
-  text-decoration: none;
-  color: white;
+@media only screen and (max-width: 1106px) {
+  .words {
+    margin: 10rem auto;
+  }
+  .formBox {
+    margin: 5rem auto;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  .words {
+    margin: 5rem 10rem;
+  }
+  .formBox {
+    margin: 0 10rem;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .words {
+    margin: 5rem 5rem;
+  }
+  .formBox {
+    margin: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .words {
+    margin: 2rem 3rem;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .formBox {
+    margin: -2rem 2.5rem;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .words {
+    margin-bottom: -4rem;
+    margin-left: .5rem;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .formBox {
+    margin-left: .5rem;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .words {
+    margin: 0 auto;
+    max-width: 375px;
+  }
+  .words h1 {
+    font-size: 2.5rem;
+  }
+  .words p {
+    max-width: 360px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: -12rem;
+  }
+  .formBox {
+    margin: 0 auto;
+    max-width: 375px;
+  }
+  .formBox .form {
+    max-width: 375px;
+  }
+  .formBox button {
+    max-width: 300px;
+  }
+  .formBox input {
+    max-width: 300px;
+  }
+  .formBox .terms {
+    max-width: 300px;
+    font-size: xx-small;
+  }
+  .formBox .banner {
+    max-width: 250px;
+    height: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
